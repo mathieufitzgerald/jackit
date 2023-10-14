@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function, absolute_import
 from jackit.plugins import microsoft
 
-
 class HID(microsoft.HID):
-    ''' Injection code for MS mouse (encrypted) '''
+    ''' Injection code for Encrypted Microsoft HID '''
 
     def __init__(self, address, payload):
         self.address = address
@@ -33,4 +31,5 @@ class HID(microsoft.HID):
 
     @classmethod
     def description(cls):
-        return 'Microsoft Encrypted HID'
+        return 'Microsoft encrypted HID'
+

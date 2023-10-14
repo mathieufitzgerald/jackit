@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-
-class HID(object):
+class HID:
     ''' Injection for Amazon devices '''
 
     def __init__(self, address, payload):
@@ -31,7 +30,7 @@ class HID(object):
                 key['frames'].append([self.frame(key), 5])
                 key['frames'].append([self.frame(), 5])
             elif key['sleep']:
-                count = int(key['sleep']) / 10
+                count = int(key['sleep']) // 10  # Use floor division
                 for i in range(0, int(count)):
                     key['frames'].append([self.frame(), 10])
 
@@ -44,3 +43,4 @@ class HID(object):
     @classmethod
     def description(cls):
         return 'Amazon HID'
+

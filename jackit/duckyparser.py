@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from __future__ import print_function, absolute_import
+
 from jackit import keymap
 
 
-class DuckyParser(object):
+class DuckyParser:
     ''' Help map ducky like script to HID codes to be sent '''
 
     hid_map = {

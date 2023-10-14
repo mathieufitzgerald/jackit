@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function, absolute_import
-from six import iteritems
 import sys
 from jackit import duckyparser
 from jackit.plugins import microsoft_enc
@@ -17,7 +15,7 @@ C = '\033[36m'  # cyan
 GR = '\033[37m'  # gray
 
 
-class KeyLogger(object):
+class KeyLogger:
 
     def __init__(self, jack, locale='us', timeout=300):
         self.jack = jack
@@ -59,7 +57,7 @@ class KeyLogger(object):
                         sys.stdout.flush()
 
     def hid_decode(self, key, status):
-        for letter, codes in iteritems(self.mapping):
+        for letter, codes in self.mapping.items():
             if codes[0] == key and codes[1] == status:
                 if len(letter) > 1:
                     return '[' + letter + ']'

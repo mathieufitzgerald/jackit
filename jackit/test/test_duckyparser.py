@@ -1,6 +1,4 @@
-from __future__ import print_function, absolute_import
 from jackit import duckyparser
-
 
 def test_char_to_hid():
     '''basic test of char to hid '''

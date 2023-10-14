@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function, absolute_import
 import time
 from jackit.lib import nrf24, nrf24_reset
 from jackit.plugins import logitech, microsoft, microsoft_enc, amazon
 
 
-class MouseJack(object):
+class MouseJack:
     ''' Class for scanning, pinging and fingerprint devices '''
 
     def __init__(self, disable_lna=False, debug=False, reset=False):
-        self.channels = range(2, 84)
+        self.channels = list(range(2, 84))
         self.channel_index = 0
         self.debug = debug
         self.devices = {}
@@ -60,6 +59,8 @@ class MouseJack(object):
     def clear_devices(self):
         self.devices = {}
         return
+
+    # ... (rest of the code remains unchanged)
 
     def scan(self, timeout=5.0, callback=None):
         self.radio.enter_promiscuous_mode()

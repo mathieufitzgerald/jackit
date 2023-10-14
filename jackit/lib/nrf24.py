@@ -15,15 +15,13 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-
-from __future__ import print_function
 import usb
 import logging
 import sys
 
 # Check pyusb dependency
 try:
-    from usb import core as _usb_core  # NOQA
+    from usb import core as _usb_core
 except ImportError:
     print('''
 ------------------------------------------
@@ -32,7 +30,7 @@ except ImportError:
 
 Please update PyUSB using pip:
 
-sudo pip install -U -I pip && sudo pip install -U -I pyusb
+sudo pip3 install -U pip3 && sudo pip3 install -U pyusb
 ''')
     sys.exit(1)
 
