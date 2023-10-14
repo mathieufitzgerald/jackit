@@ -3,6 +3,30 @@
 
 This way or may not work, still a work in progress. Please open an issue if you encounter any bugs. Have fun :)
 
+## How to Run:
+
+Fairly similar to the original JackIt installation. Head over to your favorite terminal, clone this repo, install requirements:
+
+```
+git clone https://github.com/mathieufitzgerald/jackit
+cd jackit
+pip3 install -r requirements.txt
+```
+
+Then to run the program, execute the actual jackit file:
+
+```
+cd bin/
+./jackit
+```
+
+
+
+
+
+
+
+
 
 ## ORIGINAL README:
 
