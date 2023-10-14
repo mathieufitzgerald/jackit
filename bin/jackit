@@ -12,8 +12,8 @@ from jackit import duckyparser
 from jackit import mousejack
 from jackit import keylogger
 
-__version__ = 1.00
-__authors__ = "phikshun, infamy"
+__version__ = 1.10
+__authors__ = "phikshun, infamy, mod: mathieufitzgerald"
 
 # Some console colors
 W = '\033[0m'  # white (normal)
