@@ -1,4 +1,11 @@
-# JackIt
+# JackIt - Updated to Python3
+
+
+This way or may not work, still a work in progress. Please open an issue if you encounter any bugs. Have fun :)
+
+
+## ORIGINAL README:
+
 
 _Do you like JackIt but don't want to carry around a laptop? Check [this](https://github.com/phikshun/uC_mousejack) out._
 
